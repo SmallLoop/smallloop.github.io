@@ -17,7 +17,7 @@
     <link rel="icon" href="/favicon.ico" >
     
     
-<link rel="stylesheet" href="/css/style.css?v=1721014810605.css">
+<link rel="stylesheet" href="/css/style.css?v=1721038397277.css">
 
     <!--[if lt IE 9]>
     
@@ -60,10 +60,6 @@
             
             <li rel="/index.html" class="item ">
                 <a href="/about/" title="关于" class="iconfont icon-staff">&nbsp;关于</a>
-            </li>
-            
-            <li rel="/index.html" class="item ">
-                <a href="/comment/" title="留言" class="iconfont icon-comment">&nbsp;留言</a>
             </li>
             
         </ul>
@@ -112,19 +108,19 @@
     <header>
         <!-- 标签这有且只能显示一个 -->
         
-            <a href="javascript: void(0);" class="cat">未分类</a>
+        <a class="cat-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
         
         <!-- 文章标题 -->
         
     <h3 class="post-title">
-    	<a href="https://smallloop.github.io/2024/07/15/hello-world/">
-    		Hello World
+    	<a href="https://smallloop.github.io/2024/07/15/first/">
+    		配置SSH登录
     	</a>
     </h3>
 
     </header>
     <p class="post-meta">
-        Jelon 发表于
+        肥皂味的格子衫 发表于
         <time datetime="2024-07-15T01:56:12.303Z">2024-07-15</time>
         &nbsp;&nbsp;
         <span class="post-tags">
@@ -136,27 +132,20 @@
     <div class="post-content">
         <div class="post-excerpt">
             
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+                <h4 id="生成公钥和密钥"><a href="#生成公钥和密钥" class="headerlink" title="生成公钥和密钥"></a>生成公钥和密钥</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h4 id="复制公钥到服务器"><a href="#复制公钥到服务器" class="headerlink" title="复制公钥到服务器"></a>复制公钥到服务器</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id  username(用户)@your_server_ip(服务器IP)</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h4 id="连接SSH-登录密码用bbb"><a href="#连接SSH-登录密码用bbb" class="headerlink" title="连接SSH,登录密码用bbb"></a>连接SSH,登录密码用bbb</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh username@your_server_ip</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+<h4 id="安装nginx–忽略"><a href="#安装nginx–忽略" class="headerlink" title="安装nginx–忽略"></a>安装nginx–忽略</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">依赖条件</span><br><span class="line">wget github.com/PCRE2Project/pcre2/releases/download/pcre2-10.42/pcre2-10.42.tar.gz</span><br><span class="line">tar -zxf pcre2-10.42.tar.gz</span><br><span class="line">cd pcre2-10.42</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line"></span><br><span class="line">#按官网版本</span><br><span class="line">wget http://zlib.net/zlib-1.3.1.tar.gz</span><br><span class="line">tar -zxf zlib-1.3.1.tar.gz</span><br><span class="line">cd zlib-1.3.1</span><br><span class="line">./configure --sbin-path=/home/aocudcyf/lib/libz.a</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line"></span><br><span class="line">wget http://www.openssl.org/source/openssl-1.1.1v.tar.gz</span><br><span class="line">tar -zxf openssl-1.1.1v.tar.gz</span><br><span class="line">cd openssl-1.1.1v</span><br><span class="line">./Configure darwin64-x86_64-cc --prefix=/usr</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line"></span><br><span class="line">wget https://nginx.org/download/nginx-1.25.1.tar.gz</span><br><span class="line">tar zxf nginx-1.25.1.tar.gz</span><br><span class="line">cd nginx-1.25.1</span><br><span class="line">###./configure --without-http_rewrite_module --without-http_gzip_module  不依赖pcre和zlib时用</span><br><span class="line">./configure</span><br><span class="line">--sbin-path=/home/aocudcyf/nginx/nginx	</span><br><span class="line">--conf-path=/home/aocudcyf/nginx/nginx.conf		#配置路径</span><br><span class="line">--pid-path=/home/aocudcyf/nginx/nginx.pid			</span><br><span class="line">--with-pcre=/home/aocudcyf/pcre2-10.42</span><br><span class="line">--with-zlib=/home/aocudcyf/zlib-1.2.13</span><br><span class="line">--with-http_ssl_module</span><br><span class="line">--with-stream</span><br><span class="line">--with-mail=dynamic</span><br><span class="line">--add-module=/usr/build/nginx-rtmp-module</span><br><span class="line">--add-dynamic-module=/usr/build/3party_module</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
             
             <p class="more">
-                <a href="https://smallloop.github.io/2024/07/15/hello-world/">阅读剩下更多</a>
+                <a href="https://smallloop.github.io/2024/07/15/first/">阅读剩下更多</a>
             </p>
         </div>
         <div class="post-thumbnail" data-img="">
-            <a href="https://smallloop.github.io/2024/07/15/hello-world/" title="Hello World">
+            <a href="https://smallloop.github.io/2024/07/15/first/" title="配置SSH登录">
                 
                     <img class="thumbnail" src="/img/default.png" data-echo="/img/thumbnail/5.jpg" alt="默认配图" >
                 
@@ -211,6 +200,11 @@
         <!-- 文章分类 -->
 <ul class="widget-bd">
     
+    <li>
+        <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+        <span class="badge">(1)</span>
+    </li>
+    
 </ul>
     </section>
 
@@ -245,7 +239,7 @@
     <!--博客js脚本 -->
     <!-- 这里放网站js脚本 -->
 
-<script src="/js/main.js?v=1721014810606.js"></script>
+<script src="/js/main.js?v=1721038397277.js"></script>
 
 
 </body>
