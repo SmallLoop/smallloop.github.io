@@ -17,7 +17,7 @@
     <link rel="icon" href="/favicon.ico" >
     
     
-<link rel="stylesheet" href="/css/style.css?v=1721038641512.css">
+<link rel="stylesheet" href="/css/style.css?v=1721038886389.css">
 
     <!--[if lt IE 9]>
     
@@ -113,7 +113,7 @@
         <!-- 文章标题 -->
         
     <h3 class="post-title">
-    	<a href="https://smallloop.github.io/2024/07/15/first/">
+    	<a href="https://daily.88851888.xyz/2024/07/15/first/">
     		配置SSH登录
     	</a>
     </h3>
@@ -141,11 +141,11 @@
 <h4 id="安装nginx–忽略"><a href="#安装nginx–忽略" class="headerlink" title="安装nginx–忽略"></a>安装nginx–忽略</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">依赖条件</span><br><span class="line">wget github.com/PCRE2Project/pcre2/releases/download/pcre2-10.42/pcre2-10.42.tar.gz</span><br><span class="line">tar -zxf pcre2-10.42.tar.gz</span><br><span class="line">cd pcre2-10.42</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line"></span><br><span class="line">#按官网版本</span><br><span class="line">wget http://zlib.net/zlib-1.3.1.tar.gz</span><br><span class="line">tar -zxf zlib-1.3.1.tar.gz</span><br><span class="line">cd zlib-1.3.1</span><br><span class="line">./configure --sbin-path=/home/aocudcyf/lib/libz.a</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line"></span><br><span class="line">wget http://www.openssl.org/source/openssl-1.1.1v.tar.gz</span><br><span class="line">tar -zxf openssl-1.1.1v.tar.gz</span><br><span class="line">cd openssl-1.1.1v</span><br><span class="line">./Configure darwin64-x86_64-cc --prefix=/usr</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line"></span><br><span class="line">wget https://nginx.org/download/nginx-1.25.1.tar.gz</span><br><span class="line">tar zxf nginx-1.25.1.tar.gz</span><br><span class="line">cd nginx-1.25.1</span><br><span class="line">###./configure --without-http_rewrite_module --without-http_gzip_module  不依赖pcre和zlib时用</span><br><span class="line">./configure</span><br><span class="line">--sbin-path=/home/aocudcyf/nginx/nginx	</span><br><span class="line">--conf-path=/home/aocudcyf/nginx/nginx.conf		#配置路径</span><br><span class="line">--pid-path=/home/aocudcyf/nginx/nginx.pid			</span><br><span class="line">--with-pcre=/home/aocudcyf/pcre2-10.42</span><br><span class="line">--with-zlib=/home/aocudcyf/zlib-1.2.13</span><br><span class="line">--with-http_ssl_module</span><br><span class="line">--with-stream</span><br><span class="line">--with-mail=dynamic</span><br><span class="line">--add-module=/usr/build/nginx-rtmp-module</span><br><span class="line">--add-dynamic-module=/usr/build/3party_module</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
             
             <p class="more">
-                <a href="https://smallloop.github.io/2024/07/15/first/">阅读剩下更多</a>
+                <a href="https://daily.88851888.xyz/2024/07/15/first/">阅读剩下更多</a>
             </p>
         </div>
         <div class="post-thumbnail" data-img="">
-            <a href="https://smallloop.github.io/2024/07/15/first/" title="配置SSH登录">
+            <a href="https://daily.88851888.xyz/2024/07/15/first/" title="配置SSH登录">
                 
                     <img class="thumbnail" src="/img/default.png" data-echo="/img/thumbnail/5.jpg" alt="默认配图" >
                 
@@ -239,7 +239,7 @@
     <!--博客js脚本 -->
     <!-- 这里放网站js脚本 -->
 
-<script src="/js/main.js?v=1721038641513.js"></script>
+<script src="/js/main.js?v=1721038886390.js"></script>
 
 
 </body>
