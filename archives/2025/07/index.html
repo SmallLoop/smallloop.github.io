@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://smallloop.github.io/archives/2024/"/>
+  <link rel="canonical" href="https://smallloop.github.io/archives/2025/07/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,13 +33,13 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Archive: 2024 - 肥皂味的格子衫</title>
+  <title>Archive: 2025/7 - 肥皂味的格子衫</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="随记,Note - SmallLoop - 肥皂味的格子衫">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="肥皂味的格子衫">
-<meta property="og:url" content="https://smallloop.github.io/archives/2024/index.html">
+<meta property="og:url" content="https://smallloop.github.io/archives/2025/07/index.html">
 <meta property="og:site_name" content="肥皂味的格子衫">
 <meta property="og:description" content="随记,Note">
 <meta property="og:locale">
@@ -2503,10 +2503,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
-          
-        
-          
-        
       
     
     
@@ -2514,7 +2510,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://smallloop.github.io/2024/12/23/sshlogin/">
+  <link itemprop="mainEntityOfPage" href="https://smallloop.github.io/2025/07/22/docker-install/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="肥皂味的格子衫">
   </span>
@@ -2532,19 +2528,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/12/23/sshlogin/"  itemprop="url">
-        SSH登录
+      <a href="/2025/07/22/docker-install/"  itemprop="url">
+        Docker安装
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        生成公钥和密钥1ssh-keygen
-复制公钥到服务器1ssh-copy-id  username(用户名)@your_server_ip(服务器IP)
-连接SSH1ssh username@your_server_ip
-
-
+        本文以阿里云镜像x86_64 debian系统为例：1.安装必要的一些系统工具12sudo apt-get updatesudo apt-get install ca-certificates curl gnupg
+2.信任 Docker 的 GPG 公钥12sudo install -m 0755 -d /etc/apt/keyringscurl -fsSL https://mirrors...
       
     
   </div>
@@ -2552,7 +2545,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-12-23T16:38:28+08:00">2024-12-23</time>
+        <time itemprop="dateCreated datePublished" datetime="2025-07-22T14:14:51+08:00">2025-07-22</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
@@ -2565,138 +2558,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </div>
       
         <div>
-          <a class='readmore' href='/2024/12/23/sshlogin/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://smallloop.github.io/2024/12/23/ssl/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="肥皂味的格子衫">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="肥皂味的格子衫">
-    <meta itemprop="description" content="随记,Note">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/12/23/ssl/"  itemprop="url">
-        SSL证书安装
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        安装证书工具：1curl https://get.acme.sh | sh; apt install socat -y || yum install socat -y; ~/.acme.sh/acme.sh --set-default-ca --server letsencrypt
-三种方式任选其中一种，申请失败则更换方式
-申请证书方式1：
-IPv4:1~/.acme.sh/acme.sh ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-12-23T16:09:51+08:00">2024-12-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url"><span itemprop="name">随笔</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/12/23/ssl/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://smallloop.github.io/2024/12/02/nginx/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="肥皂味的格子衫">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="肥皂味的格子衫">
-    <meta itemprop="description" content="随记,Note">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/12/02/nginx/"  itemprop="url">
-        Nginx安装
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        首先安装编译工具及相关依赖库1sudo apt install make gcc libpcre3 libpcre3-dev zlib1g-dev libssl-dev
-
-下载最新nginx源代码编译1234567891011121314151617wget https://nginx.org/download/nginx-1.26.2.tar.gztar -zxvf nginx-1.26....
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-12-02T18:06:13+08:00">2024-12-02</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url"><span itemprop="name">随笔</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/12/02/nginx/' itemprop="url">
+          <a class='readmore' href='/2025/07/22/docker-install/' itemprop="url">
             Read More
           </a>
         </div>
@@ -3451,7 +3313,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"肥皂味的格子衫","url":"https://smallloop.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://smallloop.github.io/","sameAs":["https://github.com/volantis-x"],"description":"随记,Note"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://smallloop.github.io/","name":"肥皂味的格子衫"}},{"@type":"ListItem","position":2,"item":{"@id":"https://smallloop.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://smallloop.github.io/archives/2024/","name":"2024年"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"肥皂味的格子衫","url":"https://smallloop.github.io/","keywords":null,"description":"随记,Note","author":{"@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://smallloop.github.io/","description":"随记,Note"},"publisher":{"@type":"Organization","name":"肥皂味的格子衫","url":"https://smallloop.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://smallloop.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"随记,Note","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://smallloop.github.io/"},"publisher":{"@type":"Organization","name":"肥皂味的格子衫","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"肥皂味的格子衫","url":"https://smallloop.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://smallloop.github.io/","sameAs":["https://github.com/volantis-x"],"description":"随记,Note"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://smallloop.github.io/","name":"肥皂味的格子衫"}},{"@type":"ListItem","position":2,"item":{"@id":"https://smallloop.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://smallloop.github.io/archives/2025/","name":"2025年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://smallloop.github.io/archives/2025/7/","name":"7月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"肥皂味的格子衫","url":"https://smallloop.github.io/","keywords":null,"description":"随记,Note","author":{"@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://smallloop.github.io/","description":"随记,Note"},"publisher":{"@type":"Organization","name":"肥皂味的格子衫","url":"https://smallloop.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://smallloop.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"随记,Note","inLanguage":"zh","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://smallloop.github.io/"},"publisher":{"@type":"Organization","name":"肥皂味的格子衫","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
