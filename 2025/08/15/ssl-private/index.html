@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://blog.lzzl.de/tags/nginx/"/>
+  
+  <link rel="canonical" href="https://blog.lzzl.de/2025/08/15/ssl-private/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>标签：Nginx - 肥皂味的格子衫</title>
-  <meta name="keywords" content="null">
+  <title>自签名证书 - 肥皂味的格子衫</title>
+  <meta name="keywords" content="SSL,证书,null">
   <meta desc name="description" content="随记,Note - SmallLoop - 肥皂味的格子衫">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="肥皂味的格子衫">
-<meta property="og:url" content="https://blog.lzzl.de/tags/Nginx/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="自签名证书">
+<meta property="og:url" content="https://blog.lzzl.de/2025/08/15/ssl-private/index.html">
 <meta property="og:site_name" content="肥皂味的格子衫">
-<meta property="og:description" content="随记,Note">
+<meta property="og:description" content="生成证书： Debian系统：123openssl req -x509 -newkey rsa:4096 -sha256 -days 3650 -nodes \  -keyout server.key -out server.crt -subj &quot;&#x2F;CN&#x3D;1.2.3.4&quot; \  -addext &quot;subjectAltName&#x3D;IP:1.2.3.4&quot; Wind">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-08-15T06:17:51.000Z">
+<meta property="article:modified_time" content="2025-08-15T06:28:27.007Z">
 <meta property="article:author" content="SmallLoop">
+<meta property="article:tag" content="SSL">
+<meta property="article:tag" content="证书">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2439,7 +2443,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://bing.img.run/1920x1080.php"></div>
 
@@ -2495,27 +2499,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.lzzl.de/2025/01/13/nginx-example/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://blog.lzzl.de/2025/08/15/ssl-private/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="肥皂味的格子衫">
   </span>
@@ -2524,131 +2510,250 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="随记,Note">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/01/13/nginx-example/"  itemprop="url">
-        Nginx示例
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
+    
+      <h1 class="title" itemprop="name headline">
+        自签名证书
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="" rel="nofollow">
+    <img itemprop="image" src="https://avatars.githubusercontent.com/u/23116264?v=4" class="lazyload" data-srcset="https://avatars.githubusercontent.com/u/23116264?v=4" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">格子衫</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-08-15T14:17:51+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2025年8月15日</p>
+  </a>
+</div>
+
+          
+        
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：174 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：1 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-        Nginx反代http简单示例1234567891011121314151617181920server &#123;	listen 80;    listen [::]:80;    server_name  www.example.com;    return 301 https://www.example.com$request_uri;&#125;server &#123;    l...
+      <span id="busuanzi_value_page_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h4 id="生成证书："><a href="#生成证书：" class="headerlink" title="生成证书："></a>生成证书：</h4><ul>
+<li>Debian系统：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">openssl req -x509 -newkey rsa:4096 -sha256 -days 3650 -nodes \</span><br><span class="line">  -keyout server.key -out server.crt -subj <span class="string">&quot;/CN=1.2.3.4&quot;</span> \</span><br><span class="line">  -addext <span class="string">&quot;subjectAltName=IP:1.2.3.4&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>Windows系统(可能需要单独安装openssl)：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl req -x509 -newkey rsa:4096  -days 3650 -nodes -keyout server.key -out server.crt -subj <span class="string">&quot;/CN=1.2.3.4&quot;</span>  -addext <span class="string">&quot;subjectAltName=IP:1.2.3.4&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="Nginx配置"><a href="#Nginx配置" class="headerlink" title="Nginx配置"></a>Nginx配置</h4><ul>
+<li>替换 <code>1.2.3.4</code> 为你的IP地址：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">		listen 443 ssl;</span><br><span class="line">		listen [::]:443 ssl;</span><br><span class="line">		server_name  1.2.3.4;</span><br><span class="line">		ssl_certificate_key /root/server.key; <span class="comment">#key路径</span></span><br><span class="line">		ssl_certificate /root/server.crt;     <span class="comment">#crt路径</span></span><br><span class="line">		ssl_session_cache    shared:SSL:1m;</span><br><span class="line">        ssl_session_timeout  5m;</span><br><span class="line"></span><br><span class="line">        ssl_ciphers  ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;</span><br><span class="line">        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">        ssl_prefer_server_ciphers  on;</span><br><span class="line">		location / &#123;</span><br><span class="line">			proxy_pass  http://127.0.0.1:8090;</span><br><span class="line">			proxy_set_header Upgrade <span class="variable">$http_upgrade</span>;</span><br><span class="line">			proxy_set_header Connection <span class="string">&quot;Upgrade&quot;</span>;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+  </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-01-13T10:16:17+08:00">2025-01-13</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url"><span itemprop="name">随笔</span></a>
-            </span>
-          
-        
-      </div>
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2025/01/13/nginx-example/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-08-15T14:28:27+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2025年8月15日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.lzzl.de/2024/12/02/nginx/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="肥皂味的格子衫">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="肥皂味的格子衫">
-    <meta itemprop="description" content="随记,Note">
-  </span>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SSL/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>SSL</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%AF%81%E4%B9%A6/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>证书</p></a></div>
+  <span hidden itemprop="keywords">SSL 证书</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.lzzl.de/2025/08/15/ssl-private/&title=自签名证书 - 肥皂味的格子衫&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.lzzl.de/2025/08/15/ssl-private/&title=自签名证书 - 肥皂味的格子衫&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.lzzl.de/2025/08/15/ssl-private/&title=自签名证书 - 肥皂味的格子衫&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+        <a class='prev' href='/2025/08/15/docker-cmd/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>docker-cmd</p>
+          <p class='content'>查看所有的容器1docker ps -a
+启动某个容器1docker run -itd --name danmuAPI -p 9000:9000 danmu
+运行参数-i: 以交互模式运行容器，...</p>
+        </a>
+      
+      
+        <a class='next' href='/2025/07/22/docker-install/'>
+          <p class='title'>Docker安装<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>本文以阿里云镜像x86_64 debian系统为例：1.安装必要的一些系统工具12sudo apt-get updatesudo apt-get install ca-certificates ...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2025/08/15/ssl-private/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/12/02/nginx/"  itemprop="url">
-        Nginx安装
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        首先安装编译工具及相关依赖库1sudo apt install make gcc libpcre3 libpcre3-dev zlib1g-dev libssl-dev
 
-下载最新nginx源代码编译1234567891011121314151617wget https://nginx.org/download/nginx-1.26.2.tar.gztar -zxvf nginx-1.26....
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-12-02T18:06:13+08:00">2024-12-02</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url"><span itemprop="name">随笔</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/12/02/nginx/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
+    <div id="layoutHelper-comments"></div>
 
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-    
-  
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2657,92 +2762,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/'>
-          <img no-lazy src='https://avatars.githubusercontent.com/u/23116264?v=4'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">肥皂味的格子衫</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%9A%8F%E7%AC%94/" href="/categories/%E9%9A%8F%E7%AC%94/"
-            active-action="action-categoriesE99A8FE7AC94"
-            ><div class='name'>随笔</div><div class='badge'>(7)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Docker/" style="font-size: 24px; color: #555">Docker</a> <a href="/tags/Nginx/" style="font-size: 24px; color: #555">Nginx</a> <a href="/tags/SSH/" style="font-size: 14px; color: #999">SSH</a> <a href="/tags/SSL/" style="font-size: 24px; color: #555">SSL</a> <a href="/tags/%E8%AF%81%E4%B9%A6/" style="font-size: 24px; color: #555">证书</a>
-    </div>
-  </section>
-
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E8%AF%81%E4%B9%A6%EF%BC%9A"><span class="toc-text">生成证书：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Nginx%E9%85%8D%E7%BD%AE"><span class="toc-text">Nginx配置</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2770,13 +2831,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3385,7 +3447,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"肥皂味的格子衫","url":"https://blog.lzzl.de/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.lzzl.de/","sameAs":["https://github.com/volantis-x"],"description":"随记,Note"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.lzzl.de/","name":"肥皂味的格子衫"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.lzzl.de/tags/Nginx/","name":"Nginx"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"肥皂味的格子衫","url":"https://blog.lzzl.de/","keywords":null,"description":"随记,Note","author":{"@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.lzzl.de/","description":"随记,Note"},"publisher":{"@type":"Organization","name":"肥皂味的格子衫","url":"https://blog.lzzl.de/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.lzzl.de?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"随记,Note","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.lzzl.de/"},"publisher":{"@type":"Organization","name":"肥皂味的格子衫","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"肥皂味的格子衫","url":"https://blog.lzzl.de/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.lzzl.de/","sameAs":["https://github.com/volantis-x"],"description":"随记,Note"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.lzzl.de/","name":"肥皂味的格子衫"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.lzzl.de/categories/随笔/","name":"随笔"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.lzzl.de/2025/08/15/ssl-private/","name":"自签名证书"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"肥皂味的格子衫","url":"https://blog.lzzl.de/","keywords":null,"description":"随记,Note","author":{"@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.lzzl.de/","description":"随记,Note"},"publisher":{"@type":"Organization","name":"肥皂味的格子衫","url":"https://blog.lzzl.de/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.lzzl.de?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"自签名证书","description":"随记,Note","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.lzzl.de/2025/08/15/ssl-private/"},"author":{"@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.lzzl.de/"},"publisher":{"@type":"Organization","name":"肥皂味的格子衫","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.lzzl.de/2025/08/15/ssl-private/","wordCount":0,"datePublished":"2025-08-15T06:17:51.000Z","dateModified":"2025-08-15T06:28:27.007Z","articleSection":"随笔","keywords":"SSL,证书","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
