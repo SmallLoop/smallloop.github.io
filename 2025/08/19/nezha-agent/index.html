@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://smallloop.github.io/archives/2025/07/"/>
+  
+  <link rel="canonical" href="https://smallloop.github.io/2025/08/19/nezha-agent/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>归档：2025/7 - 肥皂味的格子衫</title>
-  <meta name="keywords" content="null">
+  <title>记一次哪吒监控agent安装 - 肥皂味的格子衫</title>
+  <meta name="keywords" content="NeZha,null">
   <meta desc name="description" content="随记,Note - SmallLoop - 肥皂味的格子衫">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="肥皂味的格子衫">
-<meta property="og:url" content="https://smallloop.github.io/archives/2025/07/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记一次哪吒监控agent安装">
+<meta property="og:url" content="https://smallloop.github.io/2025/08/19/nezha-agent/index.html">
 <meta property="og:site_name" content="肥皂味的格子衫">
-<meta property="og:description" content="随记,Note">
+<meta property="og:description" content="背景 国内Nat机器(简称A)，面板搭建在国外服务器，Nat机器(A)商家屏蔽了国外出口，基于上述原因所以需要通过另一台国内可以访问面板机的机器(简称B)借助gost进行端口转发 步骤1.在国内能够访问面板机的机器B上安装gost，并执行以下命令 12.&#x2F;gost -L tcp:&#x2F;&#x2F;:18008&#x2F;data.nezha.com:8008# data.nezha.com:8008为面板机通信域名+端口">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-08-19T00:54:36.000Z">
+<meta property="article:modified_time" content="2025-08-19T07:30:03.286Z">
 <meta property="article:author" content="SmallLoop">
+<meta property="article:tag" content="NeZha">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2218,7 +2221,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2439,7 +2442,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  search' style="display: ;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://bing.img.run/1920x1080.php"></div>
 
@@ -2496,22 +2499,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://smallloop.github.io/2025/07/22/docker-install/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://smallloop.github.io/2025/08/19/nezha-agent/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="肥皂味的格子衫">
   </span>
@@ -2520,66 +2509,246 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="随记,Note">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/07/22/docker-install/"  itemprop="url">
-        Docker安装
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
+    
+      <h1 class="title" itemprop="name headline">
+        记一次哪吒监控agent安装
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="" rel="nofollow">
+    <img itemprop="image" src="https://avatars.githubusercontent.com/u/23116264?v=4" class="lazyload" data-srcset="https://avatars.githubusercontent.com/u/23116264?v=4" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">格子衫</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-08-19T08:54:36+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2025年8月19日</p>
+  </a>
+</div>
+
+          
+        
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：312 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：1 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-        本文以阿里云镜像x86_64 debian系统为例：1.安装必要的一些系统工具12sudo apt-get updatesudo apt-get install ca-certificates curl gnupg
-2.信任 Docker 的 GPG 公钥12sudo install -m 0755 -d /etc/apt/keyringscurl -fsSL https://mirrors...
+      <span id="busuanzi_value_page_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h4 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h4><p> 国内Nat机器(简称A)，面板搭建在国外服务器，Nat机器(A)商家屏蔽了国外出口，基于上述原因所以需要通过另一台国内可以访问面板机的机器(简称B)借助gost进行端口转发</p>
+<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><p>1.在国内能够访问面板机的机器B上安装gost，并执行以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./gost -L tcp://:18008/data.nezha.com:8008</span><br><span class="line"><span class="comment"># data.nezha.com:8008为面板机通信域名+端口，18008为B机器接收A机器数据的内网端口</span></span><br></pre></td></tr></table></figure>
+<p> <span style="font-size: 12px;">效果图:</span><br> <img src="/images/QQ_1755566315567.png" class="lazyload" data-srcset="/images/QQ_1755566315567.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br>2.下载agent上传至A机器&#x2F;opt&#x2F;nezha目录并修改Nat机器上agent的conf.yml文件,主要修改server信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">client_secret: ZGRcE3Sas4BlBVEKwmOD2KLJACgQQEQ9</span><br><span class="line">debug: <span class="literal">false</span></span><br><span class="line">disable_auto_update: <span class="literal">true</span></span><br><span class="line">disable_command_execute: <span class="literal">true</span></span><br><span class="line">disable_force_update: <span class="literal">false</span></span><br><span class="line">disable_nat: <span class="literal">true</span></span><br><span class="line">disable_send_query: <span class="literal">false</span></span><br><span class="line">gpu: <span class="literal">false</span></span><br><span class="line">insecure_tls: <span class="literal">false</span></span><br><span class="line">ip_report_period: 1800</span><br><span class="line">report_delay: 3</span><br><span class="line">server: 213.224.27.84:10196     <span class="comment">#修改此处通信的IP地址和端口为上面gost服务B机器的IP地址和端口，如果B服务器是Nat机器可能要进行端口映射，须填写映射端口，比如18008映射10196</span></span><br><span class="line">skip_connection_count: <span class="literal">false</span></span><br><span class="line">skip_procs_count: <span class="literal">false</span></span><br><span class="line">temperature: <span class="literal">false</span></span><br><span class="line">tls: <span class="literal">false</span></span><br><span class="line">use_gitee_to_upgrade: <span class="literal">false</span></span><br><span class="line">use_ipv6_country_code: <span class="literal">false</span></span><br><span class="line">uuid: 26f94cce-ws70-23bf-5725-29f6932322999</span><br></pre></td></tr></table></figure>
+<p>3.启动agent</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /opt/nezha</span><br><span class="line">./nezha-agent -c ./config.yml restart</span><br></pre></td></tr></table></figure>
+<h4 id="gost成功显示接收信息"><a href="#gost成功显示接收信息" class="headerlink" title="gost成功显示接收信息"></a>gost成功显示接收信息</h4><p><span style="font-size: 12px;">效果图:</span><br><img src="/images/QQ_1755566573735.png" class="lazyload" data-srcset="/images/QQ_1755566573735.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<h4 id="B机器后台运行gost"><a href="#B机器后台运行gost" class="headerlink" title="B机器后台运行gost"></a>B机器后台运行gost</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">nohup</span>  ./gost -L tcp://:18008/data.nezha.com:8008 &gt; gost.log 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="comment"># 查看日志</span></span><br><span class="line"><span class="built_in">tail</span> -f gost.log</span><br></pre></td></tr></table></figure>
+  </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-07-22T14:14:51+08:00">2025-07-22</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url"><span itemprop="name">随笔</span></a>
-            </span>
-          
-        
-      </div>
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2025/07/22/docker-install/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-08-19T15:30:03+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2025年8月19日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/NeZha/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>NeZha</p></a></div>
+  <span hidden itemprop="keywords">NeZha</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://smallloop.github.io/2025/08/19/nezha-agent/&title=记一次哪吒监控agent安装 - 肥皂味的格子衫&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://smallloop.github.io/2025/08/19/nezha-agent/&title=记一次哪吒监控agent安装 - 肥皂味的格子衫&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://smallloop.github.io/2025/08/19/nezha-agent/&title=记一次哪吒监控agent安装 - 肥皂味的格子衫&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2025/08/15/docker-cmd/'>
+          <p class='title'>Docker命令<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>查看所有的容器1docker ps -a
+启动某个容器1docker run -itd --name danmuAPI -p 9000:9000 danmu
+运行参数-i: 以交互模式运行容器，...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
-	
+  <article class="post white-box shadow" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2025/08/19/nezha-agent/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2588,92 +2757,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/'>
-          <img no-lazy src='https://avatars.githubusercontent.com/u/23116264?v=4'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">肥皂味的格子衫</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E9%9A%8F%E7%AC%94/" href="/categories/%E9%9A%8F%E7%AC%94/"
-            active-action="action-categoriesE99A8FE7AC94"
-            ><div class='name'>随笔</div><div class='badge'>(8)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Docker/" style="font-size: 24px; color: #555">Docker</a> <a href="/tags/NeZha/" style="font-size: 14px; color: #999">NeZha</a> <a href="/tags/Nginx/" style="font-size: 24px; color: #555">Nginx</a> <a href="/tags/SSH/" style="font-size: 14px; color: #999">SSH</a> <a href="/tags/SSL/" style="font-size: 24px; color: #555">SSL</a> <a href="/tags/%E8%AF%81%E4%B9%A6/" style="font-size: 24px; color: #555">证书</a>
-    </div>
-  </section>
-
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%83%8C%E6%99%AF"><span class="toc-text">背景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4"><span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#gost%E6%88%90%E5%8A%9F%E6%98%BE%E7%A4%BA%E6%8E%A5%E6%94%B6%E4%BF%A1%E6%81%AF"><span class="toc-text">gost成功显示接收信息</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#B%E6%9C%BA%E5%99%A8%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8Cgost"><span class="toc-text">B机器后台运行gost</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2701,13 +2826,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2716,14 +2842,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -3316,7 +3442,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"肥皂味的格子衫","url":"https://smallloop.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://smallloop.github.io/","sameAs":["https://github.com/volantis-x"],"description":"随记,Note"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://smallloop.github.io/","name":"肥皂味的格子衫"}},{"@type":"ListItem","position":2,"item":{"@id":"https://smallloop.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://smallloop.github.io/archives/2025/","name":"2025年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://smallloop.github.io/archives/2025/7/","name":"7月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"肥皂味的格子衫","url":"https://smallloop.github.io/","keywords":null,"description":"随记,Note","author":{"@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://smallloop.github.io/","description":"随记,Note"},"publisher":{"@type":"Organization","name":"肥皂味的格子衫","url":"https://smallloop.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://smallloop.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"随记,Note","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://smallloop.github.io/"},"publisher":{"@type":"Organization","name":"肥皂味的格子衫","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"肥皂味的格子衫","url":"https://smallloop.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://smallloop.github.io/","sameAs":["https://github.com/volantis-x"],"description":"随记,Note"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://smallloop.github.io/","name":"肥皂味的格子衫"}},{"@type":"ListItem","position":2,"item":{"@id":"https://smallloop.github.io/categories/随笔/","name":"随笔"}},{"@type":"ListItem","position":3,"item":{"@id":"https://smallloop.github.io/2025/08/19/nezha-agent/","name":"记一次哪吒监控agent安装"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"肥皂味的格子衫","url":"https://smallloop.github.io/","keywords":null,"description":"随记,Note","author":{"@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://smallloop.github.io/","description":"随记,Note"},"publisher":{"@type":"Organization","name":"肥皂味的格子衫","url":"https://smallloop.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://smallloop.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"记一次哪吒监控agent安装","description":"随记,Note","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://smallloop.github.io/2025/08/19/nezha-agent/"},"author":{"@type":"Person","name":"SmallLoop","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://smallloop.github.io/"},"publisher":{"@type":"Organization","name":"肥皂味的格子衫","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://smallloop.github.io/2025/08/19/nezha-agent/","wordCount":0,"datePublished":"2025-08-19T00:54:36.000Z","dateModified":"2025-08-19T07:30:03.286Z","articleSection":"随笔","keywords":"NeZha","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
